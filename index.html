@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intrepidus Barbers</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Calendly embed library -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="top-bar">
+    <span>📞 646-123-4567</span>
+    <span>✉️ book@intrepidusbarbers.com</span>
+  </header>
+
+  <section class="hero">
+    <img id="intro-img" src="OIP copy.webp" alt="Barber cutting hair">
+    <div class="hero-content">
+      <h1>💈 Walk-Ins Welcome — Book Online Anytime</h1>
+      <p>Classic cuts, clean fades, and razor-sharp service across NYC.</p>
+      <a href="#quote" id="quote-trigger" class="btn-primary">Book a Cut</a>
+    </div>
+  </section>
+
+  <section class="quote">
+    <img id="cust-img_1" src="barberReview.jpg" alt="Barber shop customer">
+    <blockquote>
+      “I walked in with a mess of hair and walked out with the cleanest fade I’ve ever had. 
+      The attention to detail, the vibe, the conversation—everything was top-notch. 
+      I won’t go anywhere else from now on.”
+    </blockquote>
+    <cite>– Jordan P., Brooklyn, NY</cite>
+  </section>
+
+  <section class="intro">
+    <h2>Intrepidus Barbers</h2>
+    <p>With over 15 years of experience, our expert barbers specialize in clean fades, precision cuts, and classic straight razor shaves. Proudly serving Brooklyn, Queens, and the greater NYC area — no rush, no gimmicks, just sharp results and good conversation.</p>
+  </section>
+
+  <section class="features">
+    <div class="calendly-inline-widget" data-url="https://calendly.com/matthewfslcc28/30min" style="min-width:320px;height:700px;"></div>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="card">
+        <h3>Fade & Taper Cuts</h3>
+        <p>Skin fades, tapers, and blends customized to your head shape and style.</p>
+      </div>
+      <div class="card">
+        <h3>Beard Trims</h3>
+        <p>Detailed beard sculpting and clean-up with optional hot towel finish.</p>
+      </div>
+      <div class="card">
+        <h3>Straight Razor Shaves</h3>
+        <p>Hot towel shaves with classic straight razor technique and premium lather.</p>
+      </div>
+      <div class="card">
+        <h3>Kids' Haircuts</h3>
+        <p>Patient, professional cuts for children — fun, fast, and fresh.</p>
+      </div>
+      <div class="card">
+        <h3>Hair Styling</h3>
+        <p>Pompadours, curls, textured crops — styled with quality products.</p>
+      </div>
+      <div class="card">
+        <h3>Walk-Ins & Appointments</h3>
+        <p>Flexible availability. Walk in or book a slot — we’re here when you need us.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-content_main">
+      <img id="about-img" src="barber-5194406_1280.jpg" alt="Barber chair">
+      <h3>Why Choose Us?</h3>
+      <p>At Intrepidus Barbers, we believe in blending tradition with precision. Whether it’s your weekly shape-up or a big day haircut, you’ll get honest craftsmanship, a relaxed environment, and personalized care. We use top-tier tools and products to ensure a sharp look that lasts. Come in for the cut, stay for the conversation.</p>
+    </div>
+
+    <div class="card schedule_link">
+      <a id="calendly-launcher" class="schedule-btn">📅 Schedule time with me</a>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2>What Clients Say</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+
+        <div class="review-slide">
+          <div class="review-header">
+            <img src="R (16).jpg" alt="Reviewer photo">
+            <div class="reviewer-meta">
+              <strong>Alexis L.</strong>
+              <span>Queens, NY</span>
+              <div class="stars">★★★★★</div>
+              <small>June 3, 2025</small>
+            </div>
+          </div>
+          <p>"The best skin fade I’ve had in years. Clean tools, good music, and professional staff."</p>
+        </div>
+
+        <div class="review-slide">
+          <div class="review-header">
+            <img src="istockphoto-1300512215-612x612.jpg" alt="Reviewer photo">
+            <div class="reviewer-meta">
+              <strong>Erikas V.</strong>
+              <span>Brooklyn, NY</span>
+              <div class="stars">★★★★★</div>
+              <small>May 22, 2025</small>
+            </div>
+          </div>
+          <p>"Super friendly barbers and no rush. They actually take the time to get it right."</p>
+        </div>
+
+        <div class="review-slide">
+          <div class="review-header">
+            <img src="istockphoto-1386479313-612x612.jpg" alt="Reviewer photo">
+            <div class="reviewer-meta">
+              <strong>Desiree J.</strong>
+              <span>Long Island City, NY</span>
+              <div class="stars">★★★★★</div>
+              <small>April 8, 2025</small>
+            </div>
+          </div>
+          <p>"Brought my son here and he loved it. Chill vibe, clean cut, and fair price."</p>
+        </div>
+
+      </div>
+
+      <div class="carousel-nav">
+        <button class="dot active"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>📍 510 West 45th Street, New York, NY 10036</p>
+    <p>© 2025 Intrepidus Barbers</p>
+  </footer>
+
+  <!-- Calendly badge widget -->
+  <script>
+    window.addEventListener("load", function () {
+      Calendly.initBadgeWidget({
+        url: 'https://calendly.com/matthewfslcc28/30min',
+        text: '📅 Schedule time with me',
+        color: '#005bbb',
+        textColor: '#ffffff',
+        branding: false
+      });
+    });
+  </script>
+
+</body>
+</html>
